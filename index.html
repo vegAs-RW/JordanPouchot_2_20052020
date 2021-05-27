@@ -18,7 +18,7 @@
             <nav>
                 <a href="#booking">Hébergements</a>
                 <a href="#activity">Activités</a>
-                <a href="#">S'inscrire</a>
+                <a href="#" class="register">S'inscrire</a>
             </nav>   
         </header>
 
@@ -31,22 +31,30 @@
             <!--Formulaire + boutton-->
             <form method="POST" action=".php">
                 <i class="fas fa-map-marker-alt"></i>
-                <input type="text" name="ville" value="Marseille, France">
-                <input type="submit" value="Rechercher">
+                <input class="search-input" type="text" name="ville" value="Marseille, France">
+                <input class="search-button" type="submit" value="Rechercher">
             </form>
 
             <!--Filtres-->
             <div id="filter">
                 <h2>Filtres</h2>
                 <div id=filter-box>
-                    <i class="fas fa-money-bill-wave"></i>
-                    <h3>Économique</h3>
-                    <i class="fas fa-child"></i>
-                    <h3>Familial</h3>
-                    <i class="fas fa-heart"></i>
-                    <h3>Romantique</h3>
-                    <i class="fas fa-dog"></i>
-                    <h3>Animaux autorisés</h3>
+                    <div class="granule">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <h3>Économique</h3>
+                    </div> 
+                    <div class="granule"> 
+                        <i class="fas fa-child"></i>
+                        <h3>Familial</h3>
+                    </div>
+                    <div class="granule">    
+                        <i class="fas fa-heart"></i>
+                        <h3>Romantique</h3>
+                    </div> 
+                    <div class="granule">   
+                        <i class="fas fa-dog"></i>
+                        <h3>Animaux autorisés</h3>
+                    </div>    
                 </div>
             </div>
                 <div id="result">
@@ -56,7 +64,7 @@
         </section>
 
         <!--resultat-->
-        <section class="booking">
+        <section id="booking">
             <div id="booking-all">
                 <h2>Hébergements à Marseille</h2>
                 <div id="booking-result">
@@ -182,7 +190,7 @@
         </section>
 
         <!-- Activités-->
-        <section class="activity">
+        <section id="activity">
             <h2>Activités à Marseille</h2>
             <div id="activity-all">
                 <div id="activity-1">
