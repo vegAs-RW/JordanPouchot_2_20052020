@@ -8,7 +8,7 @@ body {
 /* header */
 
 header {
-    border: black solid;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@ header {
 }
 
 header nav {
-    border: blue solid;
+    
     display: flex;
     
   
@@ -39,18 +39,18 @@ header nav a {
 /* main search */
 
 .search {
-    border: black solid;
+    
     width: 100%;
 }
 
 .search h1 {
-    border: blue solid;
+    
     font-weight: 700;
     font-size: 22px;
     margin-bottom: 0%;
 }
 .search p {
-    border: blue solid;
+    
     margin-top: 0%;
     font-size: 12px;
 }
@@ -79,7 +79,7 @@ form i {
 
 
 .search-input {
-    border: springgreen solid;
+    
     width: 200px;
     height: 30px;
     font-weight: 700;
@@ -87,7 +87,7 @@ form i {
 }
 
 .search-button {
-    border: tomato solid;
+    
     width: 150px;
     height: 38px;
     font-weight: 700;
@@ -98,7 +98,7 @@ form i {
 }
 
 #filter {
-    border: violet solid;
+    
     display: flex;
     font-size: 12px;
     align-items: center;
@@ -107,7 +107,7 @@ form i {
 }
 
 #filter-box {
-    border: springgreen solid;
+    
     display: flex;
     width: 100%;
     margin-left: 30px;
@@ -115,7 +115,7 @@ form i {
 }
 
 .granule {
-    border: tomato solid;
+    
     display: flex;
     position: relative;
     align-items: center;
@@ -143,7 +143,7 @@ form i {
 }
 
 #result {
-    border: springgreen solid;
+    
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -169,7 +169,156 @@ form i {
 
 #booking-all {
     border: black solid;
-    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 44px 36px 44px 36px;
+    max-width: 805px;
+      
 }
 
- 
+#booking-all h2 {
+    border: blue solid;
+    font-size: 22px;
+    padding-left: 25px;
+    
+}
+
+#booking-result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-bottom: 60px;
+    
+}
+   
+
+#booking-result img {
+    object-fit: cover;
+    width: 236px;
+    height: 112px;
+    border-radius: 16px 16px 0 0;
+}
+    
+
+
+#booking-result a {
+    border: 3px solid white;
+    border-radius: 16px;
+    padding: 5px 5px 10px 5px;
+    background-color: white;
+    max-width: 236px;
+    margin-bottom: 28px;
+    text-decoration: none;
+    color: black;
+}
+
+#booking-result h3 {
+    font-size: 15px;
+}
+
+#booking-result p {
+    font-size: 13px;
+}
+
+#booking {
+    display: flex;
+}
+
+#booking-popularity {
+    border: violet solid;
+    background-color: #F2F2F2;
+    border-radius: 16px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 38px 31px 45px;
+    max-width: 25%;
+    margin-left: 50px;
+
+}
+
+.boking-row {
+    width: 80%;
+    display: flex;
+    border: springgreen solid;
+    background-color: white;
+    border-radius: 16px;
+    
+}
+
+.booking-row {
+    border: 3px solid white;
+    border-radius: 16px;
+    display: flex;
+    background-color: white;
+    padding: 6px 58px 6px 6px;
+    max-width: 284px;
+    max-height: 135px;
+    margin-bottom: 29px;
+    text-decoration: none;
+    color: black;
+}
+
+#popularity-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#popularity-title h2 {
+    font-size: 22px;
+    padding-left: 25px;
+}
+
+#popularity-title i {
+    font-size: 22px;
+}
+
+#popularity-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    height: 80%;
+
+    
+}
+
+
+
+#popularity-result img {
+    
+    border-radius: 16px 0 0 16px;
+    width: 132px;
+    height: 132px;
+    object-fit: cover;
+}
+
+.booking-row-text {
+    display: flex;
+    flex-direction: column;
+    padding: 7px 0px 7px 20px;
+    
+    
+}
+
+.booking-row-text h3 {
+    font-size: 15px;
+}
+
+.booking-row-text p {
+    font-size: 13px;
+    max-width: 100%;
+}
+.valid {
+    color: #0065FC;
+}
+
+.unvalid {
+    color: #F2F2F2;
+}
