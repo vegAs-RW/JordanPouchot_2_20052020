@@ -3,6 +3,9 @@
 body {
     font-family: "Raleway", sans-serif;
     position: relative;
+    max-width: 96%;
+    padding-left: 14px;
+
 }
 
 /* header */
@@ -21,6 +24,9 @@ header {
 header nav {
     
     display: flex;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
     
   
 }
@@ -28,12 +34,26 @@ header nav {
 header nav a {
     margin-right: 50px;
     font-size: 10px;
+    height: 100%;
     text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
 }
+header nav a:hover{
+    border-top: 3px #0065FC solid;
+    color: #0065FC;
+}
+header nav a:active {
+    border-top: 3px #0065FC solid;
+    color: #0065FC;
+}
+
 
 .register {
     
     font-weight: bold;
+    color: #0065FC;
 }
 
 /* main search */
@@ -95,6 +115,7 @@ form i {
     color: white;
     background-color: #0065FC;
     border-radius: 0 16px 16px 0;
+    border: none;
 }
 
 #filter {
@@ -119,7 +140,7 @@ form i {
     display: flex;
     position: relative;
     align-items: center;
-    height: 52px;
+    
     margin-right: 25px;
     padding-right: 15px;
     border: 2px solid #D9D9D9;
@@ -130,14 +151,14 @@ form i {
 }
 .granule i {
     width: 52px;
-  height: 56px;
-  margin-left: -2px;
-  border-radius: 100%;
-  background-color: #DEEBFF;
-  color: #0065FC;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    padding: 1rem 0;
+    margin-left: -2px;
+    border-radius: 100%;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
   
 }
@@ -173,33 +194,31 @@ form i {
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-    padding: 44px 36px 44px 36px;
-    max-width: 805px;
+   
+    padding: 2rem ;
+    width: 65%;
     
       
 }
 
-#booking-all h2 {
+.booking-title h2 {
     borde: blue solid;
     font-size: 22px;
+    margin: 0%;
+    margin-bottom: 1.5rem;
     
     
 }
 
 #booking-result {
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: space-between;
-    align-content: space-between;
-    
-    
-    
-}
-   
 
-#booking-result img {
+}
+ 
+
+.booking-column img {
     object-fit: cover;
     width: 236px;
     height: 112px;
@@ -208,25 +227,40 @@ form i {
     
 
 
-#booking-result a {
+.booking-column  {
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.booking-column a {
+    
+    text-decoration: none;
+    color: black;   
+}
+
+.booking-card {
+    margin-bottom: 2rem;
     border: 3px solid white;
     border-radius: 16px;
-    padding: 5px 5px 10px 5px;
-    background-color: white;
-    max-width: 236px;
-    margin-bottom: 28px;
-    text-decoration: none;
-    color: black;
+    background-color: white; 
 }
 
 #booking-result h3 {
     font-size: 13px;
+    margin: 0;
 }
 
 #booking-result p {
     font-size: 11px;
 }
-
+ 
+.content {
+    padding: 0.5rem
+}
 .plus {
     text-decoration: none;
     font-weight: bold;
@@ -235,6 +269,8 @@ form i {
 
 #booking {
     display: flex;
+    
+    
 }
 
 #booking-popularity {
@@ -244,8 +280,8 @@ form i {
     font-size: 10px;
     display: flex;
     flex-direction: column;
-    padding: 45px 38px 31px 45px;
-    max-width: 25%;
+    padding: 2rem;
+    width: 31%;
     margin-left: 50px;
 
 }
@@ -256,11 +292,7 @@ form i {
     border-radius: 16px;
     display: flex;
     background-color: white;
-    padding: 6px 58px 6px 6px;
-    max-width: 285px;
-    max-height: 135px;
-    
-    margin-bottom: 40px;
+    margin-bottom: 2rem;
     text-decoration: none;
     color: black;
 }
@@ -269,16 +301,21 @@ form i {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-#popularity-title h2 {
     font-size: 22px;
     
 }
 
-#popularity-title i {
+#popularity-title h2 {
     font-size: 22px;
+    margin: 0%;
+    margin-bottom: 1.5rem;
+    
 }
+#popularity-title i {
+    margin-bottom: 1.5rem;
+}
+
+
 
 #popularity-result {
     display: flex;
@@ -348,9 +385,8 @@ form i {
     display: flex;
     flex-direction: column;
     padding-left: 16px;
-    margin-bottom: 60px;
-    max-width: 1350px;
-    max-height: 500px;
+    margin-bottom: 3rem;
+    
 }
 
 #activity-all {
@@ -358,7 +394,7 @@ form i {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 20%;
+    
     
     
     
@@ -368,7 +404,7 @@ form i {
     font-size: 22px;
 }
 
-#activity-1, #activity-4{
+.activity-fat{
    height: 100%;
    object-fit: cover;
    borde: turquoise solid;
@@ -376,6 +412,7 @@ form i {
    margin-right: 32px;
    border-radius: 16px;
    box-shadow: 0 0 20px black ;
+   margin-bottom: 1rem;
 }
 
 #activity-2, #activity-3, #activity-5, #activity-6{
@@ -390,33 +427,17 @@ form i {
    align-items: center;
 }
 
-#activity-2-3 {
+.activity-slim {
    display: flex;
    flex-direction: column;
    justify-content: space-between; 
+   margin-bottom: 1rem;
 }
 
-#activity-5-6 {
-    display: flex;
-   flex-direction: column;
-   justify-content: space-between; 
-}
-#activity-1-3 {
-    borde: tomato solid;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    paddin-right: 30px;
-    width: 48%;
-    max-height: 25%;
-}
 
-#activity-4-6 {
-    borde: tomato solid;
-    display: flex;
-    flex-direction: row;
-    width: 48%;
-}
+
+
+
 
 .activity-box {
     text-decoration: none;
@@ -453,9 +474,9 @@ form i {
     border-radius: 16px 16px 0 0;
 }
 
-#about {
-    width: 100%;
-    height: 150px;
+footer {
+    
+   
     display: flex;
     justify-content: space-between;
     background-color: #F2F2F2;
@@ -496,5 +517,52 @@ form i {
 .about-section ul {
     borde: springgreen solid;
     height: 50%;
+    
+}
+
+@media screen and (max-width: 1200px) {
+    #popularity-result {
+        border: pink solid;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    #booking-popularity {
+        max-width: 800px;
+    }
+    
+}
+
+@media screen and (max-width: 1050px) {
+    .booking-row-text {
+        width: 145px;
+    }
+}
+@media  screen and (max-width: 790px) {
+
+    
+    #booking-all {
+        margin-bottom: 2rem;
+        width: 96%;
+    }
+    #booking-popularity {
+        
+        margin-left: 0px;
+        width: 96%;
+        
+    }
+    #booking {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    #booking-result {
+        display: flex;
+        flex-direction: column;
+    }
+    
+        
+        
     
 }
