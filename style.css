@@ -4,112 +4,85 @@ body {
     font-family: "Raleway", sans-serif;
     position: relative;
     max-width: 96%;
-    padding-left: 14px;
-
+    
 }
 
-/* header */
+#global-page {
+    padding-left: 1.5rem;
+}
 
+
+/* header */
 header {
-    
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    
-
 
 }
 
 header nav {
-    
     display: flex;
-    height: 45px;
-    justify-content: center;
-    align-items: center;
-    
-  
 }
 
 header nav a {
-    margin-right: 50px;
+    margin-right: 3rem;
     font-size: 10px;
-    height: 100%;
     text-decoration: none;
     color: black;
     display: flex;
     align-items: center;
 }
+
 header nav a:hover{
     border-top: 3px #0065FC solid;
     color: #0065FC;
 }
+
 header nav a:active {
     border-top: 3px #0065FC solid;
     color: #0065FC;
 }
 
-
-.register {
-    
+.register  {
+    margin: 0;
     font-weight: bold;
     color: #0065FC;
 }
 
 /* main search */
-
-.search {
-    
-    width: 100%;
-}
-
 .search h1 {
-    
     font-weight: 700;
     font-size: 22px;
-    
 }
-.search p {
-    
-    
+
+.search p {    
     font-size: 12px;
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 /* main form*/
 form {
     display: flex;
-    align-items: center;
     position: relative;
-    width: 400px;
-    height: 35px;
-    border: 2px solid #F2F2F2;
-    border-radius: 16px;
-    margin-left: 10px;
-    margin-top: 20px;
-    background-color: white;
+    margin-left: 1rem;
+    margin-top: 1.8rem;
 }
 
-
-form i {
-    height: 16px;
+form i {    
     background-color: #F2F2F2;
-    padding: 12px 16px;
+    padding: 0.7rem 1rem;
     border-radius: 16px 0 0 16px;
-    text-align: center;}
+}
 
-
-.search-input {
-    
-    width: 200px;
-    height: 30px;
+.search-input {    
+    padding: 0.5rem;
     font-weight: 700;
     font-size: 15px;
 }
 
 .search-button {
-    
-    width: 150px;
-    height: 38px;
+    padding: 0 1.2rem;
     font-weight: 700;
     font-size: 15px;
     color: white;
@@ -118,57 +91,49 @@ form i {
     border: none;
 }
 
+/* filtre */
 #filter {
-    
     display: flex;
     font-size: 12px;
     align-items: center;
-    margin-top: 32px;
-    
+    margin-top: 2rem;
 }
 
 #filter-box {
-    
     display: flex;
-    width: 100%;
-    margin-left: 30px;
-    
+    margin-left: 2rem;
 }
 
 .granule {
-    
     display: flex;
     position: relative;
     align-items: center;
-    
-    margin-right: 25px;
-    padding-right: 15px;
-    border: 2px solid #D9D9D9;
-    border-radius: 26px;
+    margin-right: 1rem;
+    padding-right: 1rem;
+    border: 2px solid #F2F2F2;
+    border-radius: 3rem;
     background-color: white;
     box-shadow: 2px 2px 10px #F5F5F5;
-  
+}
+
+.granule:hover {
+    border: 1px solid #0065FC;
+    box-shadow: 0 0 0.5rem grey;
 }
 .granule i {
-    width: 52px;
-    padding: 1rem 0;
-    margin-left: -2px;
+    padding: 1rem 1rem;
     border-radius: 100%;
     background-color: #DEEBFF;
     color: #0065FC;
     display: flex;
     justify-content: center;
-    align-items: center;
-
-  
+    align-items: center;  
 }
 
 #result {
-    
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
-    
 }
 
 #result i {
@@ -183,41 +148,28 @@ form i {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
-
 }
 
+/* Hébergement */
 #booking-all {
-    borde: black solid;
     background-color: #F2F2F2;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-   
-    padding: 2rem ;
-    width: 65%;
-    
-      
+    padding: 2rem 0 2rem 2rem;
 }
 
 .booking-title h2 {
-    borde: blue solid;
     font-size: 22px;
     margin: 0%;
     margin-bottom: 1.5rem;
-    
-    
 }
 
 #booking-result {
     display: flex;
-    
     justify-content: space-between;
-
 }
  
-
 .booking-column img {
     object-fit: cover;
     width: 236px;
@@ -225,19 +177,14 @@ form i {
     border-radius: 16px 16px 0 0;
 }
     
-
-
 .booking-column  {
-    
-    
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    
+    justify-conten: space-around;
+    padding: 0 2rem 0 0;
 }
 
 .booking-column a {
-    
     text-decoration: none;
     color: black;   
 }
@@ -246,7 +193,8 @@ form i {
     margin-bottom: 2rem;
     border: 3px solid white;
     border-radius: 16px;
-    background-color: white; 
+    background-color: white;
+    box-shadow: 0 0 0.5rem grey; 
 }
 
 #booking-result h3 {
@@ -261,6 +209,7 @@ form i {
 .content {
     padding: 0.5rem
 }
+
 .plus {
     text-decoration: none;
     font-weight: bold;
@@ -269,23 +218,19 @@ form i {
 
 #booking {
     display: flex;
-    
-    
 }
 
+/* Les plus populaires*/
 #booking-popularity {
-    borde: violet solid;
     background-color: #F2F2F2;
     border-radius: 16px;
     font-size: 10px;
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    width: 31%;
     margin-left: 50px;
-
+    
 }
-
 
 .booking-row {
     border: 3px solid white;
@@ -295,44 +240,34 @@ form i {
     margin-bottom: 2rem;
     text-decoration: none;
     color: black;
+    box-shadow: 0 0 0.5rem grey;
+    padding: 0 5rem 0 0;
 }
 
 #popularity-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 22px;
-    
+    font-size: 22px;    
 }
 
 #popularity-title h2 {
     font-size: 22px;
     margin: 0%;
     margin-bottom: 1.5rem;
-    
 }
+
 #popularity-title i {
     margin-bottom: 1.5rem;
 }
-
-
 
 #popularity-result {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
-    borde: black solid;
-    
-    
-
-    
 }
 
-
-
-#popularity-result img {
-    
+#popularity-result img {    
     border-radius: 16px 0 0 16px;
     width: 132px;
     height: 132px;
@@ -342,30 +277,24 @@ form i {
 .booking-row-text {
     display: flex;
     flex-direction: column;
-    padding: 7px 0px 7px 20px;
-    
-    
+    padding: 1rem 0 0 1rem;
 }
 
 .booking-row-text h3 {
     font-size: 13px;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
-    
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .booking-row-text p {
     font-size: 11px;
     max-width: 100%;
-    
-    
-
 }
 
-.booking-row-text i {
-        padding-top: 30px;
-        max-width: 94px;
-        max-height: 15px;
+.ooking-row-text i {
+    padding-top: 30px;
+    max-width: 94px;
+    max-height: 15px;
 }
 
 .notation {
@@ -380,24 +309,18 @@ form i {
     color: #F2F2F2;
 }
 
+/* Activités*/
 #activity {
-    borde: black solid;
     display: flex;
     flex-direction: column;
-    padding-left: 16px;
+    padding-left: 2rem;
     margin-bottom: 3rem;
-    
 }
 
 #activity-all {
-    borde: springgreen solid;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-    
-    
-    
+    flex-wra: wrap;
+    justify-conten: space-between;
 }
 
 #activity h2 {
@@ -405,26 +328,23 @@ form i {
 }
 
 .activity-fat{
-   height: 100%;
    object-fit: cover;
-   borde: turquoise solid;
    justify-content: space-between;
    margin-right: 32px;
    border-radius: 16px;
-   box-shadow: 0 0 20px black ;
+   box-shadow: 0 0 0.5rem grey ;
    margin-bottom: 1rem;
 }
 
 #activity-2, #activity-3, #activity-5, #activity-6{
-    height: 45%;
-   object-fit: cover;
-   borde: turquoise solid;
-   justify-content: space-between;
-   margin-right: 32px;
-   border-radius: 16px;
-   box-shadow: 0 0 20px black;
-   display: flex;
-   align-items: center;
+    heigh: 45%;
+    object-fit: cover;
+    justify-content: space-between;
+    margin-right: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 0 0.5rem grey;
+    display: flex;
+    align-items: center;
 }
 
 .activity-slim {
@@ -434,11 +354,6 @@ form i {
    margin-bottom: 1rem;
 }
 
-
-
-
-
-
 .activity-box {
     text-decoration: none;
 }
@@ -446,45 +361,37 @@ form i {
 .ativity-box img {
     width: 300px;
     height: 150px;
-
 }
 
 .activity-box h3 {
-    borde: blue solid;
     padding-left: 16px;
     font-size: 13px;
     text-decoration: none;
     color: black;
-    
-    
-    
 }
 
-.img1, .img4 {
+.img-fat {
     width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
 }
 
-.img2, .img3, .img5, .img6 {
+.img-slim {
     width: 300px;
     height: 110px;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
 }
 
+/* Footer */
 footer {
-    
-   
     display: flex;
     justify-content: space-between;
     background-color: #F2F2F2;
-    
 }
 
 .about-section {
-    borde: black solid;
     text-decoration: none;
     width: 80%;
     display: flex;
@@ -498,15 +405,14 @@ footer {
     color: black;
     font-size: 13px;
     list-style: none;
-    borde: olive solid;
     margin-left: -25px;
     padding-bottom: 10px;
-    
 }
+
 .about-section li {
-    list-style: none;
-    
+    list-style: none;    
 }
+
 .about-section h3 {
     font-size: 15px;
     padding-left: 16px;
@@ -515,12 +421,11 @@ footer {
 }
 
 .about-section ul {
-    borde: springgreen solid;
-    height: 50%;
-    
+    height: 50%;    
 }
 
-@media screen and (max-width: 1200px) {
+/* Responsive */
+/*@media screen and (max-width: 1200px) {
     #popularity-result {
         border: pink solid;
         flex-direction: row;
@@ -529,7 +434,7 @@ footer {
         
     }
     #booking-popularity {
-        max-width: 800px;
+        max-widt: 800px;
     }
     
 }
@@ -561,8 +466,137 @@ footer {
         display: flex;
         flex-direction: column;
     }
-    
+    .booking-card {
+        width: 80%;
+    }  
+}*/
+
+@media screen and (max-width: 1377px) {
+    #global-page {
+        padding-left: 0.5rem;
+    }
+
+    .booking-row {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #booking-popularity {
+        margin-left: 1rem;
+    }
+    .booking-row-text i {
+        padding-top: 0;
+    }
+    .booking-row-text {
+        padding: 0.5rem 0 0.5rem 0.5rem;
+    }
+    #popularity-result img {
+        width: 236px;
+        height: 112px;
+        border-radius: 16px 16px 0 0;
+    }
+    .activity-fat{
+        margin-right: 1rem;
+    }
+    #activity-2, #activity-3, #activity-5, #activity-6 {
+        margin-right: 1rem;
+    }
+    .img-fat {
+        width: 230px;
+        heigh: 110px;
+    }
+    .img-slim {
+        width: 230px;
+    }
+    header {
+        display: block;
+    }
+    header nav {
+        padding-top: 1rem;
+    }
+}
+
+@media all and (max-width : 822px){
+    #filter {
         
-        
-    
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    #filter-box {
+        display: block;
+        margin-left: 0;
+    }
+
+    .granule {
+        margin: 1rem 0;
+    }
+
+    #booking-all:nth-child(1) {
+        order: 2;
+    }
+    #booking-popularity:nth-child(2) {
+        order: 1;
+    }
+    #booking {
+        flex-direction: column;
+    }
+    .booking-row {
+        flex-direction: row;
+    }
+    #popularity-result img {
+        width: 132px;
+        border-radius: 16px 0 0 16px;
+    }
+    .booking-row-text i {
+        padding-top: 1.5rem;
+    }
+    #booking-popularity {
+        margin: 0;
+        width: 292px;
+    }
+    #booking-all {
+        background-color: white;
+    }
+    #booking-result {
+        display: block;
+    }
+    .booking-card {
+        margin-bottom: 1rem;
+        width: 292px;
+    }
+    .booking-card img {
+        width: 292px;
+    }
+    .booking-card p {
+        margin: 0.4rem 0;
+    }
+    .booking-column {
+        margin: 0;
+    }
+    .plus {
+        margin-top: 1rem;
+    }
+    #activity-all {
+        display: block;
+    }
+    .activity-fat, #activity-2, #activity-3, #activity-5, #activity-6 {
+        width: 292px;
+        height: 190px;
+        margin-right: 0;
+        display: block;
+    }
+    .img-fat, .img-slim {
+        width: 292px;
+        height: 150px;
+    }
+    .activity-box h3 {
+        padding: 0.5rem 0 0 0.5rem;
+        margin: 0;
+    }
+     #activity-3, #activity-6 {
+         margin-top: 1rem;
+     }
 }
