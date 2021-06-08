@@ -13,14 +13,16 @@
         <div id="global-page">
         <!-- Header + nav-->
         <header class="header">
-            <a href="#" class="header-logo">
+            <div id="logo">
                 <img src="images/logo/Reservia.svg" alt="logo Reservia">
-            </a>
+            </div>
             <nav>
-                <a href="#booking">Hébergements</a>
-                <a href="#activity">Activités</a>
+                <div class="book-activ">
+                    <a class="header-nav-link" href="#booking">Hébergements</a>
+                    <a class="header-nav-link" href="#activity">Activités</a>
+                </div> 
                 <a href="#" class="register">S'inscrire</a>
-            </nav>   
+            </nav>     
         </header>
 
         <!--Main-->
@@ -31,9 +33,10 @@
                 
                 <!--Formulaire + boutton-->
                 <form method="POST" action=".php">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i id="gps" class="fas fa-map-marker-alt"></i>
                     <input class="search-input" type="text" name="ville" value="Marseille, France">
                     <input class="search-button" type="submit" value="Rechercher">
+                    <button class="search-loupe"><i id="loupe" class="fas fa-search"></i></button>
                 </form>
 
                 <!--Filtres-->
@@ -234,6 +237,7 @@
             <section id="activity">
                 <h2>Activités à Marseille</h2>
                 <div id="activity-all">
+                    <div class="activity-big">
                     <div class="activity-fat">
                         <a href="#" class="activity-box">
                             <img class="img-fat" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vue du vieux port de Marseille">
@@ -243,7 +247,7 @@
                     <div class="activity-slim">
                         <div id="activity-2">
                             <a href="#" class="activity-box">
-                                <img class="img-slim" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo du fort de Pomègues">
+                                <img class="img-slim" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo du fort de Pomègues">
                                 <h3>Fort de Pomègues</h3>
                             </a>
                         </div>
@@ -254,6 +258,8 @@
                             </a>
                         </div>
                     </div>
+                    </div>
+                    <div class="activity-big">
                     <div class="activity-fat">
                         <a href="#" class="activity-box">
                             <img class="img-fat" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="vue imprenable sur le parc national des Calanques de Marseille">
@@ -273,6 +279,7 @@
                                 <h3>Parc Longchamp</h3>
                             </a>
                         </div>
+                    </div>
                     </div>
                 </div>
             </section>
