@@ -1,10 +1,8 @@
-
-/* base */
+/* Base */
 body {
-    font-family: "Raleway", sans-serif;
     position: relative;
     max-width: 96%;
-    
+    font-family: "Raleway", sans-serif;
 }
 
 #global-page {
@@ -18,19 +16,18 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0px;
+    padding: 2rem 0;
 }
 
 .header-nav-link {
-    padding-top: 30px;
+    padding-top: 2rem;
 }
 
 header nav a {
-    font-size: 0.9em;
+    font-size: 14px;
     color: black;
-    padding-top: 3px;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 3rem;
 }
 
 header nav a:hover {
@@ -57,6 +54,7 @@ header nav {
 .search h1 {
     font-weight: 700;
     font-size: 22px;
+    margin-top: 0;
 }
 
 .search p {    
@@ -65,9 +63,11 @@ header nav {
     display: flex;
     align-items: center;
 }
+
 .search-loupe {
     display: none;
 }
+
 
 /* main form*/
 form {
@@ -87,10 +87,12 @@ form {
     padding: 0.5rem;
     font-weight: 700;
     font-size: 15px;
+    border: 2px #F2F2F2 solid;
 }
 
 .search-button {
     padding: 0 1.2rem;
+    margin-left: -0.5rem;
     font-weight: 700;
     font-size: 15px;
     color: white;
@@ -99,12 +101,13 @@ form {
     border: none;
 }
 
+
 /* filtre */
 #filter {
     display: flex;
     font-size: 12px;
     align-items: center;
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 
 #filter-box {
@@ -130,6 +133,7 @@ form {
     border: 1px solid #0065FC;
     box-shadow: 0 0 0.5rem grey;
 }
+
 .granule i {
     padding: 1rem 1rem;
     border-radius: 100%;
@@ -148,17 +152,18 @@ form {
 
 #result i {
     border: 1px solid #D9D9D9;
-    width: 20px;
-    height: 20px;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 100%;
     background-color: white;
     color: #0065FC;
     font-size: 12px;
-    margin-right: 10px;
+    margin-right: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 /* Hébergement */
 #booking-all {
@@ -166,34 +171,32 @@ form {
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    padding: 2rem 0 2rem 2rem;
+    padding: 2rem 2rem 0 2rem;
+    width: 60%; 
 }
 
-.booking-title h2 {
+h2 {
     font-size: 22px;
     margin: 0%;
     margin-bottom: 1.5rem;
 }
 
-#booking-result {
+.booking-result {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 75%;
 }
  
-.booking-column img {
+.booking-card img {
     object-fit: cover;
     width: 236px;
     height: 112px;
     border-radius: 16px 16px 0 0;
 }
     
-.booking-column  {
-    display: flex;
-    flex-direction: column;
-    padding: 0 2rem 0 0;
-}
-
-.booking-column a {
+.booking-card a {
     text-decoration: none;
     color: black;   
 }
@@ -203,16 +206,23 @@ form {
     border: 3px solid white;
     border-radius: 16px;
     background-color: white;
-    box-shadow: 0 0 0.5rem grey; 
+    box-shadow: 0 0 0.5rem grey;
+    display: flex;
+    flex-direction: column 
 }
 
-#booking-result h3 {
+.booking-result h3 {
     font-size: 13px;
     margin: 0;
 }
 
-#booking-result p {
+.booking-result p {
     font-size: 11px;
+    margin: 0.3rem 0;
+}
+
+.booking-notation {
+    font-size: 10px;
 }
  
 .content {
@@ -223,11 +233,15 @@ form {
     text-decoration: none;
     font-weight: bold;
     color: black;
+    padding: 2rem 0 0 0;
 }
 
 #booking {
     display: flex;
+    margin-top: 2rem;
+    width: 100%;
 }
+
 
 /* Les plus populaires*/
 #booking-popularity {
@@ -237,8 +251,8 @@ form {
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    margin-left: 50px;
-    
+    margin-left: 2rem;
+    width: 30%; 
 }
 
 .booking-row {
@@ -322,8 +336,7 @@ form {
 #activity {
     display: flex;
     flex-direction: column;
-    
-    margin-bottom: 3rem;
+    margin: 3rem 0;
 }
 
 #activity-all {
@@ -341,7 +354,7 @@ form {
 .activity-fat {
    object-fit: cover;
    justify-content: space-between;
-   margin-right: 2.7rem;
+   margin-right: 2rem;
    border-radius: 16px;
    box-shadow: 0 0 0.5rem grey ;
    margin-bottom: 1rem;
@@ -381,18 +394,19 @@ form {
 }
 
 .img-fat {
-    width: 300px;
+    width: 305px;
     height: 300px;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
 }
 
 .img-slim {
-    width: 300px;
+    width: 305px;
     height: 110px;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
 }
+
 
 /* Footer */
 footer {
@@ -401,7 +415,6 @@ footer {
 }
 
 .about-section {
-    
     width: 80%;
 }
 
@@ -410,8 +423,7 @@ footer {
     color: black;
     font-size: 13px;
     list-style: none;
-    margin-left: -1.5rem;
-    
+    margin-left: -1.5rem; 
 }
 
 .about-section li {
@@ -422,16 +434,18 @@ footer {
 .about-section h3 {
     font-size: 15px;
     padding-left: 1rem;
-    padding-top: 1rem;
-    
+    padding-top: 1rem;  
 }
-
 
 
 /* Responsive */
 @media screen and (max-width: 1377px) {
     #global-page {
         padding-left: 0.5rem;
+    }
+
+    #booking-all {
+        width: 70%;
     }
 
     .booking-row {
@@ -442,70 +456,110 @@ footer {
 
     #booking-popularity {
         margin-left: 1rem;
+        width: auto;
     }
+
+    .notation {
+        padding: 0;
+    }
+
     .booking-row-text i {
         padding-top: 0;
     }
+
     .booking-row-text {
         padding: 0.5rem 0 0.5rem 0.5rem;
     }
+
     #popularity-result img {
         width: 236px;
         height: 112px;
         border-radius: 16px 16px 0 0;
     }
-    .activity-fat{
+
+    .acivity-big {
+        justify-content: space-around;
+        margin-right: .5rem;
+    }
+
+    .ativity-fat{
         margin-right: 1rem;
     }
-    #activity-2, #activity-3, #activity-5, #activity-6 {
-        margin-right: 1rem;
-    }
+    
     .img-fat {
-        width: 230px;
+        width: 270px;
     }
+
     .img-slim {
-        width: 230px;
+        width: 270px;
     }
+
     header {
         display: block;
     }
+
     header nav {
         padding-top: 1rem;
     }
-}
+    
+    #global-page {
+        width: 1212px;
+    }
 
+    body {
+        width: 1212px;
+    } 
+}
 
 @media all and (max-width: 1200px) {
     #booking-all:nth-child(1) {
         order: 2;
     }
+
     #booking-popularity:nth-child(2) {
         order: 1;
     }
+
     #booking {
         flex-direction: column;
     }
+
     #booking-popularity {
         margin-bottom: 1rem;
     }
+
     .booking-row {
         margin: 0;
     }
+
     #popularity-result {
        flex-direction: row;
     }
+
     #booking-all {
         margin-left: 1rem;
+        width: auto;
     }
+
+    .booking-card{
+        margin: 2rem;
+    }
+
     #activity {
         margin-left: 1rem;
     }
+
     .activity-fat {
         margin-right: 2.7rem;
     }
-    .activity-slim {
-        margin-right: 2.7rem;
+
+    .plus {
+        padding: 1rem 0;
     }
+
+    .booking-result {
+        justify-content: space-around;
+    }   
 }
 
 @media screen and (max-width: 973px) {
@@ -513,50 +567,75 @@ footer {
         width: 48%;
         display: block;
     }
+
     .activity-fat {
         width: 98%;
     }
+
     .activity-fat h3 {
         padding-bottom: 0.8rem;
     }
+
     #activity-all {
         justify-content: space-between;
     }
+
     .img-fat {
         width: 100%;
         height: 110px;
     }
+
     #activity-2, #activity-3, #activity-5, #activity-6 {
         width: 98%;
     }
+
     #activity-2, #activity-5 {
         margin: 0 0 1rem 0;
     }
+
     .activity-slim {
         margin: 0;
-
     }
+
     .img-slim {
         width: 100%;
         height: 110px;
     }
-    
+
+    .boking-result {
+        justify-content: flex-start;
+    }
+
+    .boking-card {
+        margin: 0.5rem;
+    } 
 }
 
 @media screen and (max-width : 913px){
     #booking-popularity {
-        width: 800px;
-        
+        width: 800px;  
     }
+
     #booking-all {
         width: 800px;
         padding-right: 2rem;
-    
     }
+
     #activity {
         width: 870px;
     }
-    
+
+    footer {
+        width: 870px;
+    }
+
+    #global-page {
+        width: 870px;
+    }
+
+    .booking-card {
+        margin: 0.5rem;
+    }
 }
 
 @media screen and (max-width: 825px) {
@@ -564,14 +643,20 @@ footer {
     #filter-box {
         flex-wrap: wrap;
     }
+
     footer {
-        width: 870px;
+        width: 825px;
     }
 }
 
 @media all and (max-width : 429px) {
-    form {
-        margin-left: 0;
+    
+    #global-page {
+        width: 370px;
+    }
+
+    .search h1 {
+        margin-top: 1rem;
     }
 
     .search-button {
@@ -579,21 +664,22 @@ footer {
     }
 
     .search-loupe {
-        
         display: block;
         background-color: #0065FC;
         color: white;
         font-weight: bold;
-        border: none;
+        border: 3px #0065FC solid;
         border-radius: 1rem;
         margin-left: -1.5rem;
         padding : 0 1rem
     }
+
+    #gps {
+        padding: 1rem 1.5rem;
+    }
     
     #filter {
-        
         flex-direction: column;
-        
         align-items: flex-start;
         margin-top: 1rem;
     }
@@ -607,14 +693,16 @@ footer {
         padding : 0 1rem 0 0;
     }
 
-    
     #booking {
         flex-direction: column;
     }
+
     .booking-row {
         flex-direction: row;
         margin-bottom: 1rem;
+        width: 300px;
     }
+
     #popularity-result img {
         width: 132px;
         border-radius: 16px 0 0 16px;
@@ -623,59 +711,73 @@ footer {
     #popularity-result {
         flex-direction: column;
     }
+
     .booking-row-text i {
         padding-top: 1.5rem;
     }
+
     #booking-popularity {
         margin: 0;
         width: 292px;
     }
+
     #booking-all {
         background-color: white;
         padding: 2rem 0 2rem 0;
         margin-left: 2rem;
         width: 292px;
     }
+
     #booking-result {
         display: block;
         width: 292px;
     }
+
     .booking-card {
         margin-bottom: 1rem;
-        width: 292px;
+        width: 300px;
     }
+    
     .booking-card img {
-        width: 292px;
+        width: 300px;
     }
+
     .booking-card p {
         margin: 0.4rem 0;
     }
+
     .booking-column {
         margin: 0;
         width: 290px;
         padding: 0;
     }
+
     .plus {
         margin-top: 1rem;
     }
+
     #activity {
-        margin-left: 2rem;
+        margin: 0 0 2rem 2rem;
         width: 292px;
     }
+
     #activity-all {
         display: block;
     }
+
     .activity-fat, #activity-2, #activity-3, #activity-5, #activity-6 {
-        width: 292px;
+        width: 300px;
         height: 160px;
         margin-right: 0;
         display: block;
         margin-bottom: 1rem;
     }
+
     .img-fat, .img-slim {
-        width: 292px;
+        width: 300px;
         height: 120px;
     }
+
     .activity-box h3 {
         padding: 0.5rem 0 0 0.5rem;
         margin: 0;
@@ -683,14 +785,15 @@ footer {
      
     footer {
         display: block;
-        width: 100%;
         margin: 0;
-        
+        width: 352px;
     }
+
     .about-section {
         width: 100%;
         margin: 0 1rem;
     }
+
     body {
         margin: 0;
     }
@@ -700,8 +803,12 @@ footer {
         display:flex ;
     }
 
+    header nav a {
+        margin: 0;
+    }
+
     .register {
-        margin-right: 10px;
+        margin: 0 1rem 2rem;
     }
 
     .book-activ {
@@ -711,23 +818,40 @@ footer {
         width: 100%;
         display: flex;
         justify-content: space-around;
+        border-bottom: 3px solid #F2F2F2;
+        padding: 0 0 0.8rem 0;
     }
     
     #logo {
-        align-self: flex-start;
-        margin-left: 20px;
+        align-self: flex-start;  
     }
     
-    .book-activ  {
-        border-bottom: 3px solid #F2F2F2;
-        padding-botto: 10px;
-    }
     .book-activ a:hover {
         border-bottom: 3px solid #0065FC;
         color: #0065FC;
-        padding-bottom: 10px;
-    }
-    .book-activ a:hover {
+        padding-bottom: 1rem;
         border-top: none;
     }
-}
+
+    .search-input { 
+        height: 2rem;
+        font-size: 20px;
+    }
+
+    .search p {
+        font-size: 15px;
+    }
+
+    #result i {
+        margin: 0 0.5rem;
+    }
+
+    .booking-row-text {
+        padding: 0.5rem 1rem 0.3rem 0.9rem;
+    } 
+}   
+        
+        
+
+
+
