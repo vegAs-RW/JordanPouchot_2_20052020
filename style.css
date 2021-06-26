@@ -1,6 +1,5 @@
 /* Base */
 body {
-    position: relative;
     max-width: 96%;
     font-family: "Raleway", sans-serif;
 }
@@ -71,8 +70,7 @@ header nav a:hover {
 
 /* main form*/
 form {
-    display: flex;
-    position: relative;
+    display: flex; 
     margin-left: 1rem;
     margin-top: 1.8rem;
 }
@@ -117,7 +115,6 @@ form {
 
 .granule {
     display: flex;
-    position: relative;
     margin-right: 1rem;
     padding-right: 1rem;
     border: 2px solid #F2F2F2;
