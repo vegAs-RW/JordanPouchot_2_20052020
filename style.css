@@ -93,11 +93,9 @@ header {
     margin-top: 0;
 }
 
-.search p {
+.subtitle, .result-subtitle {
     font-size: 12px;
     margin: 0;
-    display: flex;
-    align-items: center;
 }
 
 .search-loupe {
@@ -225,20 +223,17 @@ form {
 
 .booking-all {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
     padding: 0 2rem;
 }
 
-.booking-title/*booking-all h2*/ {
+.booking-title {
     display: block;
     width: 100%;
     font-size: 1.4rem;
 }
 
 .plus {
-    isplay: block;
     width: 100%;
     margin: 2rem 0;
     font-weight: bold;
@@ -677,7 +672,6 @@ footer h3 {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     .navbar {
-        border-bottom: 2px solid #d9d9d941;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -688,6 +682,7 @@ footer h3 {
     }
     .navbar #navbar-link-booking {
         grid-area: navbar-link-booking;
+        border-bottom: 2px solid #d9d9d941;
     }
     .navbar #navbar-link-booking:hover {
         border-top: none;
@@ -695,6 +690,7 @@ footer h3 {
     }
     .navbar #navbar-link-activity {
         grid-area: navbar-link-activity;
+        border-bottom: 2px solid #d9d9d941;
     }
     .navbar #navbar-link-activity:hover {
         border-top: none;
@@ -731,10 +727,13 @@ footer h3 {
         height: 2rem;
         font-size: 20px;
     }
-    .search p {
-        font-size: 15px;
+    .subtitle {
         margin: 0 0 0 1rem;
     }
+    .search p {
+        font-size: 15px;
+    }
+    
     #result i {
         margin: 0 0.5rem;
     }
@@ -850,10 +849,6 @@ footer h3 {
     }
     .search h1 {
         margin: 1rem 0 1rem .5rem;
-    }
-    popular-img img {
-        min-width: 133px;
-        max-width: 133px;
     }
     form {
         margin-left: 3rem;
