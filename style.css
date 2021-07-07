@@ -36,7 +36,6 @@ header {
 
 .navbar {
     display: grid;
-    justify-content: center;
     align-items: center;
     grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -45,13 +44,12 @@ header {
 
 .navbar-link {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-#navbar-link-register a {
-    color: #0065fc;
+.navbar-link:hover {
+    border-top: 3px solid #0065FC;
 }
 
 .navbar a {
@@ -60,12 +58,16 @@ header {
     padding: 1.5rem;
 }
 
-.logo {
-    grid-area: logo;
+.navbar-link a:hover {
+    color: #0065FC;
 }
 
 #navbar-link-booking {
     grid-area: booking;
+}
+
+.logo {
+    grid-area: logo;
 }
 
 #navbar-link-activity {
@@ -73,18 +75,13 @@ header {
     color: black;
 }
 
-.navbar-link:hover {
-    border-top: 3px solid #0065FC;
-}
-
-.navbar-link a:hover {
-    color: #0065FC;
-}
-
 #navbar-link-register {
     grid-area: register;
-    color: #0065fc;
     font-weight: 700;
+}
+
+#navbar-link-register a {
+    color: #0065fc;
 }
 
 
@@ -137,6 +134,14 @@ form {
     background-color: #0065FC;
     border-radius: 0 16px 16px 0;
     border: none;
+}
+
+.search-button:hover {
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    background-color: #F2F2F2;
+    color: #0065FC;
 }
 
 
@@ -226,14 +231,14 @@ form {
     padding: 0 2rem;
 }
 
-.booking-all h2 {
+.booking-title/*booking-all h2*/ {
     display: block;
     width: 100%;
     font-size: 1.4rem;
 }
 
-.booking-all .plus {
-    display: block;
+.plus {
+    isplay: block;
     width: 100%;
     margin: 2rem 0;
     font-weight: bold;
@@ -310,19 +315,19 @@ form {
     width: 90%;
 }
 
-.booking-popularity .popularity-title {
+.popularity-title {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin: 0;
 }
 
-.booking-popularity .popularity-title h2 {
+.popularity-title h2 {
     margin: 0;
     font-size: 1.4rem;
 }
 
-.booking-popularity i {
+.popularity-title i {
     font-size: 1.4rem;
 }
 
@@ -400,7 +405,7 @@ form {
     "activity-1 activity-3 activity-4 activity-6";
 }
 
-#activity .activity-card {
+.activity-card {
     position: relative;
     width: 100%;
     height: 100%;
@@ -697,7 +702,7 @@ footer h3 {
     }
     .navbar #navbar-link-register {
         display: flex;
-        justify-content: flex-end;
+        align-items: flex-end;
         grid-area: navbar-link-register;
     }
     .navbar-link:hover {
@@ -720,7 +725,7 @@ footer h3 {
         border: 3px #0065FC solid;
         border-radius: 1rem;
         margin-left: -1.5rem;
-        padding: 0 1rem;
+        padding: 0 1rem; 
     }
     .search-input {
         height: 2rem;
@@ -728,6 +733,7 @@ footer h3 {
     }
     .search p {
         font-size: 15px;
+        margin: 0 0 0 1rem;
     }
     #result i {
         margin: 0 0.5rem;
@@ -760,9 +766,6 @@ footer h3 {
         width: 95%;
         margin: 0 .5rem;
     }
-    .booking-all .plus {
-        margin: 1rem 0 0 0;
-    }
     #activity {
         display: grid;
         grid-template-columns: 1fr;
@@ -777,18 +780,18 @@ footer h3 {
         grid-gap: 0;
         height: 1500px;
         margin-bottom: 1rem;
+        padding: 0 0 0 1rem;
     }
     .activity-title {
         margin: 0 0 1.5rem 2rem;
     }
-    #activity .activity-card { 
+    .activity-card { 
         width: 90%;
         min-width: 90%;
         min-height: 200px;
         max-height: 200px;
         margin: 0 0 0 1rem;
     }
-
     .footer-all {
         flex-direction: column;
     }
@@ -808,12 +811,11 @@ footer h3 {
     .search h1 {
         margin: 1rem 0 1rem 1rem;
     }
-    
     form {
         margin-left: 1.5rem;
     }
     #navbar-link-register a {
-        padding: 0 0 0 5rem;
+        padding: 0;
     }
     #filter h2 {
         margin: 1rem 0 0 1rem;
@@ -826,5 +828,59 @@ footer h3 {
     }
     .bloc-popularities {
         border-radius: 0;
+    }
+    #activity {
+        padding: 0 0 0 .4rem;
+    }
+}
+
+@media screen and (max-width: 372px) {
+    .booking-row .content p {
+        margin: .5rem 0;
+    }
+    #navbar-link-register a {
+        padding: 0;
+    }
+    .search-input {
+        font-size: initial;
+        width: 10rem;
+    }
+    .bloc-popularities .booking-popularity .booking-row {
+        margin: 0;
+    }
+    .search h1 {
+        margin: 1rem 0 1rem .5rem;
+    }
+    popular-img img {
+        min-width: 133px;
+        max-width: 133px;
+    }
+    form {
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 323px) {
+    form {
+        margin-left: 1rem;
+    }
+    .popular-img img {
+        min-width: 133px;
+        max-width: 133px;
+    }
+    .booking-popularity .popularity-title h2 {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 273px) {
+    .booking-row .content {
+        padding: 0 0 0 .9rem;
+    }
+    form {
+        width: 95%;
+    }
+    #result i {
+        width: 2.5rem;
     }
 }
