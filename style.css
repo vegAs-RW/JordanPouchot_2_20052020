@@ -95,7 +95,7 @@ header {
 
 .subtitle, .result-subtitle {
     font-size: 12px;
-    margin: 0;
+    margin: 0.5rem 0 0 0;
 }
 
 .search-loupe {
@@ -200,7 +200,7 @@ form {
     background-color: white;
     color: #0065FC;
     font-size: 12px;
-    margin-right: 1rem;
+    margin-right: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -872,10 +872,15 @@ footer h3 {
     .booking-row .content {
         padding: 0 0 0 .9rem;
     }
-    form {
-        width: 95%;
-    }
     #result i {
         width: 2.5rem;
+    }
+    #gps {
+        padding: .5rem 1rem;
+    }
+    .search-input {
+        font-size: .5rem;
+        width: 7rem;
+        height: 1rem;
     }
 }
